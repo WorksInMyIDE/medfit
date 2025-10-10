@@ -15,7 +15,7 @@ const Navbar = () => {
         </ul>
         <div className={styles.icons}>
             <img src="./search-icon.svg" alt="Search" />
-            <img src="./cart-icon.png" alt="Cart" />
+            <img src="./cart-icon.svg" alt="Cart" />
         </div>
     </nav>
   )

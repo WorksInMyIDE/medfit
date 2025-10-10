@@ -1,0 +1,23 @@
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding-inline: 300px;
+    background-color: var(--border-cl);
+    height: 100vh;
+}
+
+.heroText h1 {
+    font-family: Poppins, sans-serif;
+    color: var(--heading-text);
+    font-size: 5rem;
+    font-weight: 500;
+    line-height: 110%;
+    margin-bottom: 0.825rem;
+}
+
+.heroText p {
+    color: var(--body-text);
+    margin-bottom: 2rem;
+    font-size: 1.125rem;
+}
