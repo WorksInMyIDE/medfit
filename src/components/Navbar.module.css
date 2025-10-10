@@ -1,0 +1,44 @@
+img {
+    max-width: 25px;
+}
+
+nav {
+    padding-inline: 300px;
+    padding-block: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--big-shade-cl);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--primary);
+}
+
+.logo span {
+    font-size: 2rem;
+    font-family: Poppins;
+    font-weight: 500;
+    color: var(--heading-text)
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 1.9rem;
+}
+
+ul li {
+    list-style-type: none;
+    font-size: 1.15rem;
+    color: var(--heading-text);
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
