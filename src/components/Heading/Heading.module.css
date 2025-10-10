@@ -1,0 +1,9 @@
+.heading {
+    color: var(--heading-text);
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 500;
+    font-family: Poppins, sans-serif;
+    padding-top: 10rem;
+    padding-bottom: 3.75rem;
+}
