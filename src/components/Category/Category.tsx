@@ -65,6 +65,7 @@ const Category = () => {
         <div className={styles.offers}>
           {offers.map( (offer) => <OfferCard topTip={offer.topTip} heading={offer.heading} image={offer.image} />)}
         </div>
+        <Heading text='Latest health products' />
     </section>
   )
 }

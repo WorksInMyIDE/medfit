@@ -3,12 +3,16 @@
     flex-direction: column;
     gap:0.94rem;
     align-self: flex-start;
+    position: relative;
 }
 
 .imageContainer {
-    padding: 3.8rem 5.53rem;
+    padding: 2.8rem 3.53rem;
     background-color: var(--white);
     border-radius: 0.67rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .info {

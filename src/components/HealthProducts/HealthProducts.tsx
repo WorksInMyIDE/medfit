@@ -58,7 +58,7 @@ const HealthProducts = () => {
   ]
   return (
     <section className={styles.healthProducts}>
-        <Heading text='Latest Health Product'/>
+        <Heading text='Explore Our Store Collection'/>
         <div className={styles.products}>
           {products.map( product => <HealthProduct image={product.image} name={product.name} price={product.price} discount={product.discount} />)}
         </div>

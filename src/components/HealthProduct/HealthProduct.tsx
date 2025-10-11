@@ -1,4 +1,6 @@
+import HoverBtn from '../HoverBtn/HoverBtn'
 import styles from './HealthProduct.module.css'
+import gsap from 'gsap'
 
 interface Props {
   image: string
@@ -8,10 +10,17 @@ interface Props {
 }
 
 const HealthProduct = ({image, name, price, discount}: Props) => {
+
+  const handleHover = ()=> {
+    // learn ref in react and fix this section of the code so hover effects work
+    gsap.to(".hoverBtn", {top: 120, backgroundColor: '!green'})
+  }
+
   return (
     <div className={styles.healthProduct}>
         <div className={styles.imageContainer}>
             <img src={image} alt="b12 medicine" />
+            <HoverBtn image='./cart-2.svg' text='Shop Now' onHover={handleHover} />
         </div>
         <div className={styles.info}>
             <h5>{name}</h5>
