@@ -2,6 +2,7 @@ import styles from './Category.module.css'
 import Heading from "../Heading/Heading"
 import CategoryCard from '../CategoryCard/CategoryCard'
 import OfferCard from '../OfferCard/OfferCard'
+import HealthProduct from '../HealthProduct/HealthProduct'
 
 interface CategoryType {
   link: string
@@ -13,6 +14,14 @@ interface OfferTypes {
   topTip: string
   heading: string
   image: string
+}
+
+interface LatestProductType {
+  image: string
+  name: string
+  price: number
+  discount?: number
+  topTip?: string
 }
 
 const Category = () => {
@@ -56,6 +65,34 @@ const Category = () => {
     },
 
   ]
+
+  const latestProduct: LatestProductType[] = [
+    {
+      image: './microscope.svg',
+      name: 'Microscope',
+      price: 45.00,
+      topTip: "New"
+    },
+    {
+      image: './oximeter.svg',
+      name: 'Pulse Oximeter',
+      price: 19.00,
+      discount: 25.00,
+      topTip: "Save 10%"
+    },
+    {
+      image: './serum.svg',
+      name: 'Vitamin Serum',
+      price: 20.00,
+      discount: 30.00,
+    },
+    {
+      image: './high-protein.svg',
+      name: 'High Protein',
+      price: 50.00,
+      topTip: 'New'
+    },
+  ]
   return (
     <section className={styles.category}>
         <Heading text='Shop By Category'/>
@@ -66,6 +103,9 @@ const Category = () => {
           {offers.map( (offer) => <OfferCard topTip={offer.topTip} heading={offer.heading} image={offer.image} />)}
         </div>
         <Heading text='Latest health products' />
+        <div className={styles.latestProducts}>
+          {latestProduct.map( product => <HealthProduct topTip={product.topTip} image={product.image} name={product.name} price={product.price} />)}
+        </div>
     </section>
   )
 }

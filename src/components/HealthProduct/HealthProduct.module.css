@@ -1,8 +1,7 @@
 .healthProduct {
     display: flex;
     flex-direction: column;
-    gap:0.94rem;
-    align-self: flex-start;
+    gap: 0.94rem;
     position: relative;
 }
 
@@ -13,6 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex: 1;
 }
 
 .info {
@@ -21,7 +21,7 @@
     gap: 0.625;
 }
 
-.info h5{
+.info h5 {
     font-size: 1.6rem;
     color: var(--heading-text);
     font-weight: 500;
@@ -29,7 +29,7 @@
     line-height: 150%;
 }
 
-.info > div {
+.info>div {
     display: flex;
     align-items: center;
     gap: 1.33rem;
@@ -37,4 +37,15 @@
     font-weight: 500;
     color: var(--body-text);
     font-size: 1.2rem;
+}
+
+.topTip {
+    background-color: var(--badge-bg);
+    padding: 0.3125rem 0.6875rem;
+    border-radius: 10px;
+    color: var(--white);
+    position: absolute;
+    top: 7%;
+    left: 7%;
+    font-weight: 500;
 }

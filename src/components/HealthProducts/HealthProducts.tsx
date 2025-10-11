@@ -7,6 +7,7 @@ interface productType {
   name: string
   price: number
   discount?: number
+  topTip?: string
 }
 
 const HealthProducts = () => {
@@ -15,7 +16,8 @@ const HealthProducts = () => {
       image: './b12-medicine.svg',
       name: "B12 medicine",
       price: 19.00,
-      discount: 25.00
+      discount: 25.00,
+      topTip: 'New'
     },
     {
       image: './tonometer.svg',
@@ -60,7 +62,7 @@ const HealthProducts = () => {
     <section className={styles.healthProducts}>
         <Heading text='Explore Our Store Collection'/>
         <div className={styles.products}>
-          {products.map( product => <HealthProduct image={product.image} name={product.name} price={product.price} discount={product.discount} />)}
+          {products.map( product => <HealthProduct image={product.image} name={product.name} price={product.price} discount={product.discount} topTip={product.topTip} />)}
         </div>
     </section>
   )

@@ -7,9 +7,10 @@ interface Props {
   name: string
   price: number
   discount?: number
+  topTip?: string
 }
 
-const HealthProduct = ({image, name, price, discount}: Props) => {
+const HealthProduct = ({image, name, price, discount, topTip}: Props) => {
 
   const handleHover = ()=> {
     // learn ref in react and fix this section of the code so hover effects work
@@ -19,6 +20,7 @@ const HealthProduct = ({image, name, price, discount}: Props) => {
   return (
     <div className={styles.healthProduct}>
         <div className={styles.imageContainer}>
+            {topTip &&  <div className={styles.topTip}>{topTip}</div>}
             <img src={image} alt="b12 medicine" />
             <HoverBtn image='./cart-2.svg' text='Shop Now' onHover={handleHover} />
         </div>

@@ -2,7 +2,8 @@
     padding-inline: 300px;
 }
 
-.cards, .offers {
+.cards,
+.offers {
     display: flex;
     justify-content: space-between;
 }
@@ -10,4 +11,11 @@
 .offers {
     gap: 1.875rem;
     margin-top: 6.875rem;
+}
+
+.latestProducts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: stretch;
+    gap: 1.875rem;
 }
