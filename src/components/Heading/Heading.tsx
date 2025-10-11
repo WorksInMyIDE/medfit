@@ -1,8 +1,12 @@
 import styles from './Heading.module.css'
 
-const Heading = () => {
+interface Props {
+  text: string
+}
+
+const Heading = ({text}: Props) => {
   return (
-    <h3 className={styles.heading}>Heading</h3>
+    <h3 className={styles.heading}>{text}</h3>
   )
 }
 

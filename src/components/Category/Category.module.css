@@ -1,0 +1,13 @@
+.category {
+    padding-inline: 300px;
+}
+
+.cards, .offers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.offers {
+    gap: 1.875rem;
+    margin-top: 6.875rem;
+}

@@ -1,0 +1,36 @@
+.healthProduct {
+    display: flex;
+    flex-direction: column;
+    gap:0.94rem;
+    align-self: flex-start;
+}
+
+.imageContainer {
+    padding: 3.8rem 5.53rem;
+    background-color: var(--white);
+    border-radius: 0.67rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625;
+}
+
+.info h5{
+    font-size: 1.6rem;
+    color: var(--heading-text);
+    font-weight: 500;
+    font-family: Poppins, sans-serif;
+    line-height: 150%;
+}
+
+.info > div {
+    display: flex;
+    align-items: center;
+    gap: 1.33rem;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    color: var(--body-text);
+    font-size: 1.2rem;
+}
