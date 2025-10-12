@@ -49,3 +49,7 @@
     left: 7%;
     font-weight: 500;
 }
+
+.discount {
+    text-decoration: line-through;
+}

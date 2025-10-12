@@ -1,5 +1,6 @@
 import Heading from '../Heading/Heading'
 import HealthProduct from '../HealthProduct/HealthProduct'
+import Newsletter from '../Newsletter/Newsletter'
 import styles from './HealthProducts.module.css'
 
 interface productType {
@@ -60,10 +61,11 @@ const HealthProducts = () => {
   ]
   return (
     <section className={styles.healthProducts}>
-        <Heading text='Explore Our Store Collection'/>
-        <div className={styles.products}>
-          {products.map( product => <HealthProduct image={product.image} name={product.name} price={product.price} discount={product.discount} topTip={product.topTip} />)}
-        </div>
+      <Heading text='Explore Our Store Collection' />
+      <div className={styles.products}>
+        {products.map(product => <HealthProduct image={product.image} name={product.name} price={product.price} discount={product.discount} topTip={product.topTip} />)}
+      </div>
+      <Newsletter />
     </section>
   )
 }

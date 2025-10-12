@@ -3,6 +3,7 @@ import Heading from "../Heading/Heading"
 import CategoryCard from '../CategoryCard/CategoryCard'
 import OfferCard from '../OfferCard/OfferCard'
 import HealthProduct from '../HealthProduct/HealthProduct'
+import ThreeWayCard from '../ThreeWayCard/ThreeWayCard'
 
 interface CategoryType {
   link: string
@@ -95,17 +96,18 @@ const Category = () => {
   ]
   return (
     <section className={styles.category}>
-        <Heading text='Shop By Category'/>
-        <div className={styles.cards}>
-          {categories.map( (category) => {return <CategoryCard link={category.link} heading={category.heading} itemCount={category.itemCount} />})}
-        </div>
-        <div className={styles.offers}>
-          {offers.map( (offer) => <OfferCard topTip={offer.topTip} heading={offer.heading} image={offer.image} />)}
-        </div>
-        <Heading text='Latest health products' />
-        <div className={styles.latestProducts}>
-          {latestProduct.map( product => <HealthProduct topTip={product.topTip} image={product.image} name={product.name} price={product.price} />)}
-        </div>
+      <Heading text='Shop By Category' />
+      <div className={styles.cards}>
+        {categories.map((category) => { return <CategoryCard link={category.link} heading={category.heading} itemCount={category.itemCount} /> })}
+      </div>
+      <div className={styles.offers}>
+        {offers.map((offer) => <OfferCard topTip={offer.topTip} heading={offer.heading} image={offer.image} />)}
+      </div>
+      <Heading text='Latest health products' />
+      <div className={styles.latestProducts}>
+        {latestProduct.map(product => <HealthProduct topTip={product.topTip} image={product.image} name={product.name} price={product.price} />)}
+      </div>
+      <ThreeWayCard />
     </section>
   )
 }
