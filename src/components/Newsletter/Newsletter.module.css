@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.875rem;
-    margin-block: 8.125rem;
+    padding-block: 8.125rem;
 }
 
 .image {

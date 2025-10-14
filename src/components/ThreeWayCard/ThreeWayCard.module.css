@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     border-radius: 0.625rem;
-    margin-top: 4.124rem
+    margin-block: 4.124rem
 }
 
 .threeWayContainer .card {

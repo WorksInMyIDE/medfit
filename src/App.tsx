@@ -3,6 +3,7 @@ import Hero from "./components/Hero/Hero"
 import Navbar from "./components/Navbar/Navbar"
 import Category from "./components/Category/Category"
 import HealthProducts from "./components/HealthProducts/HealthProducts"
+import Testimonials from "./components/Testimonials/Testimonials"
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Hero />
       <Category />
       <HealthProducts />
+      <Testimonials />
     </header>
   )
 }
