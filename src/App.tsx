@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar"
 import Category from "./components/Category/Category"
 import HealthProducts from "./components/HealthProducts/HealthProducts"
 import Testimonials from "./components/Testimonials/Testimonials"
+import FollowUs from "./components/FollowUs/FollowUs"
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Category />
       <HealthProducts />
       <Testimonials />
+      <FollowUs />
     </header>
   )
 }
