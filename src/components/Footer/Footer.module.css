@@ -1,0 +1,89 @@
+.footer {
+    background-color: var(--border-cl);
+    padding-block: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr 2fr;
+    gap: 2.2rem;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 0.825rem;
+}
+
+.pages {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.125rem;
+    color: var(--body-text);
+    gap: 0.94rem;
+}
+
+h6 {
+    color: var(--heading-text);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.875rem;
+}
+
+.footerLogo {
+    display: flex;
+    align-items: center;
+}
+
+.footerLogo img {
+    width: 3.25rem;
+}
+
+.footerLogo p {
+    font-size: 4.375rem;
+    color: var(--heading-text);
+    font-family: Poppins, sans-serif;
+}
+
+.socials>p {
+    font-size: 1.125rem;
+    color: var(--body-text);
+    max-width: 60%;
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact>div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.825rem;
+}
+
+.contact div span {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.125rem;
+    color: var(--body-text);
+    font-size: 1.125rem;
+}
+
+.contact div>div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    font-size: 1.125rem;
+}
