@@ -42,24 +42,3 @@
     gap: 0.625rem;
     width: 100%;
 }
-
-.input .inputContainer {
-    display: flex;
-    align-items: center;
-    gap: 0.625rem;
-    background-color: var(--big-inner-cl);
-    padding: 0.625rem;
-    border: 1px solid var(--heading-text);
-    border-radius: 0.625rem;
-    flex: 1;
-}
-
-.inputContainer input {
-    border: none;
-    background: transparent;
-    font-size: 1.125rem;
-}
-
-.inputContainer input::placeholder {
-    color: var(--body-text);
-}

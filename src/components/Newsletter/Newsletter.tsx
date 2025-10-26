@@ -1,4 +1,5 @@
 import Button from '../Button/Button'
+import Input from '../Input/Input'
 import styles from './Newsletter.module.css'
 
 const Newsletter = () => {
@@ -11,10 +12,7 @@ const Newsletter = () => {
                     <p>Sign up for an instant 15% Discount</p>
                 </div>
                 <div className={styles.input}>
-                    <div className={styles.inputContainer}>
-                        <img src="./mail.svg" alt="mail icon" />
-                        <input type="text" placeholder='Enter Email' />
-                    </div>
+                    <Input icon='mail.svg' placeholder='Enter Email' inputType='email' />
                     <Button text='Sign up' link='./link-external.svg' />
                 </div>
             </div>
