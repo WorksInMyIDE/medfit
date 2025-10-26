@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8.125rem;
+    padding-block-start: 10rem;
+    padding-block-end: 5rem;
+    background-color: var(--deeper-white);
+    font-family: Poppins, sans-serif;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    gap: 3.75rem;
+}
+
+.heading h2 {
+    font-size: 4.375rem;
+    color: var(--heading-text);
+    font-weight: 600;
+    text-align: center;
+    padding-inline: 3rem;
+}
+
+.heading .images {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.aboutus {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    color: var(--heading-text);
+    gap: 1rem;
+}
+
+.aboutus h3 {
+    flex: 1;
+    font-size: 3.625rem;
+    font-weight: 600;
+}
+
+.aboutus p {
+    font-size: 2.5rem;
+    font-weight: 600;
+    flex: 2;
+}

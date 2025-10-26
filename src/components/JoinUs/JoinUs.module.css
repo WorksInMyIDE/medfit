@@ -1,0 +1,30 @@
+.container {
+    padding-block: 8.125rem;
+}
+
+.innerContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--white);
+}
+
+.innerContainer .text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: flex-start;
+    padding: 6.25rem;
+}
+
+.innerContainer .text h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--heading-text);
+    font-family: Poppins, sans-serif;
+}
+
+.innerContainer .text p {
+    color: var(--body-text);
+    font-size: 1.125rem;
+}
