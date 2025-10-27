@@ -1,0 +1,10 @@
+.layout {
+    display: flex;
+    padding-block: 100px;
+    gap: 5rem;
+    position: relative;
+    justify-content: space-between;
+    padding-inline: 300px;
+    background-color: var(--white-deeper);
+    font-family: Poppins;
+}

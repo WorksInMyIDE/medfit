@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.25rem;
+    /* position: sticky; */
+}
+
+.numberOfItems {
+    color: var(--body-text);
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+.category h3 {
+    font-weight: 500;
+    color: var(--heading-text);
+}
+
+.inputContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    color: var(--body-text)
+}
+
+.categoryContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.125rem;
+}
+
+.inputContainer input[type="checkbox"]:checked {
+    background-color: black;
+}
+
+.inputContainer:hover {
+    color: var(--heading-text);
+}
+
+hr {
+    color: var(--white);
+    border-color: var(--big-inner-cl)
+}
