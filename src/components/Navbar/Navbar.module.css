@@ -41,3 +41,12 @@ ul li {
     align-items: center;
     gap: 1rem;
 }
+
+a {
+    text-decoration: none;
+    color: var(--body-text)
+}
+
+a:hover {
+    color: var(--heading-text);
+}

@@ -37,7 +37,6 @@ const Goal = () => {
 
 
     const handleClick = (item: statements) => {
-        console.log("you clicked on ", item.heading)
         setSelected(item.id)
         setCurrent(item.text)
     }
