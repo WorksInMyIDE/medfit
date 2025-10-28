@@ -1,48 +1,63 @@
 .container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.5rem;
     font-size: 1.25rem;
-    /* position: sticky; */
 }
 
-.numberOfItems {
+.resultsCount {
     color: var(--body-text);
+    margin: 0;
 }
 
-.category {
+.section {
     display: flex;
     flex-direction: column;
-    gap: 0.625rem;
+    gap: 1rem;
 }
 
-.category h3 {
+.sectionTitle {
     font-weight: 500;
     color: var(--heading-text);
+    margin: 0;
 }
 
-.inputContainer {
-    display: flex;
-    align-items: center;
-    gap: 0.625rem;
-    color: var(--body-text)
-}
-
-.categoryContainer {
+.optionsContainer {
     display: flex;
     flex-direction: column;
     gap: 1.125rem;
 }
 
-.inputContainer input[type="checkbox"]:checked {
-    background-color: black;
+.option {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
 }
 
-.inputContainer:hover {
+.checkbox {
+    width: 1.125rem;
+    height: 1.125rem;
+    cursor: pointer;
+}
+
+.checkbox:checked {
+    background-color: black;
+    accent-color: black;
+}
+
+.label {
+    color: var(--body-text);
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.label:hover {
     color: var(--heading-text);
 }
 
-hr {
+.divider {
+    border: none;
+    border-top: 1px solid var(--big-inner-cl);
+    margin: 0;
     color: var(--white);
-    border-color: var(--big-inner-cl)
 }

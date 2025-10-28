@@ -1,8 +1,8 @@
 import Filter from "../components/Filter/Filter"
 import Items from "../components/Items/Items"
 import Navbar from "../components/Navbar/Navbar"
-import styles from "./Shop.module.css"
 import Footer from "../components/Footer/Footer"
+import styles from "./Shop.module.css"
 
 const Shop = () => {
     return (
